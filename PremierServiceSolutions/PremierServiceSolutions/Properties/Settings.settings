@@ -5,10 +5,10 @@
     <Setting Name="PremierServicedbConnectionString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Data Source=SOLAFIDEI-LAPTO;Initial Catalog=PremierServicedb;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;workstation id=PremierServicedb.mssql.somee.com;packet size=4096;user id=solafidei_SQLLogin_1;pwd=ny98xprdqh;data source=PremierServicedb.mssql.somee.com;persist security info=False;initial catalog=PremierServicedb&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Data Source=SOLAFIDEI-LAPTO;Initial Catalog=PremierServicedb;Integrated Security=True</Value>
+      <Value Profile="(Default)">workstation id=PremierServicedb.mssql.somee.com;packet size=4096;user id=solafidei_SQLLogin_1;pwd=ny98xprdqh;data source=PremierServicedb.mssql.somee.com;persist security info=False;initial catalog=PremierServicedb</Value>
     </Setting>
   </Settings>
 </SettingsFile>

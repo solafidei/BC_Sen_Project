@@ -13,7 +13,7 @@ namespace PremierServiceSolutions.Data_Layer
 {
     class DataHandler
     {
-        public static string conString = @"Data Source=SOLAFIDEI-LAPTO;Initial Catalog=PremierServicedb;Integrated Security=True";
+        public static string conString = @"workstation id=PremierServicedb.mssql.somee.com;packet size=4096;user id=solafidei_SQLLogin_1;pwd=ny98xprdqh;data source=PremierServicedb.mssql.somee.com;persist security info=False;initial catalog=PremierServicedb";
         SqlConnection con;
         SqlCommand cmd;
         SqlDataAdapter adapter;

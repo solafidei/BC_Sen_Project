@@ -26,8 +26,9 @@ namespace PremierServiceSolutions.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SOLAFIDEI-LAPTO;Initial Catalog=PremierServicedb;Integrated Security=" +
-            "True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("workstation id=PremierServicedb.mssql.somee.com;packet size=4096;user id=solafide" +
+            "i_SQLLogin_1;pwd=ny98xprdqh;data source=PremierServicedb.mssql.somee.com;persist" +
+            " security info=False;initial catalog=PremierServicedb")]
         public string PremierServicedbConnectionString {
             get {
                 return ((string)(this["PremierServicedbConnectionString"]));
