@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PremierServiceSolutions.Business_Layer.ClientDetail">
+    <Position X="0.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAQAIABAAgAAAAAACAAAIABBgAAgBAEAI=</HashCode>
+      <FileName>Business_Layer\Client.cs</FileName>
+      <NewMemberFileName>Client.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PremierServiceSolutions.Business_Layer.Employee">
+    <Position X="7.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ECAAAFAgAAAAAAAAAEAAAEBAAAAAAAAJAAAAAUAAAAA=</HashCode>
+      <FileName>Business_Layer\Employee.cs</FileName>
+      <NewMemberFileName>Employee.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PremierServiceSolutions.Business_Layer.Individual">
+    <Position X="1.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAEAAAABAAAAAAAAAAAAAAAAAAgwAAAAECAAAAAg=</HashCode>
+      <FileName>Business_Layer\Individual.cs</FileName>
+      <NewMemberFileName>Individual.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PremierServiceSolutions.Business_Layer.Business" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAEAAAABAAAAAAAAAABAAAgwQQAAEAAAAAAA=</HashCode>
+      <FileName>Business_Layer\Business.cs</FileName>
+      <NewMemberFileName>Business.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PremierServiceSolutions.Business_Layer.Agreement" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAEAAAEAAAABCAAAAAwAwAEEAAAAAAAAACABgA=</HashCode>
+      <FileName>Business_Layer\Agreement.cs</FileName>
+      <NewMemberFileName>Agreement.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PremierServiceSolutions.Business_Layer.WorkRequest" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgACAgAEAAAABAAAIAAAAAAAAAAAAAAAEAIAABACA=</HashCode>
+      <FileName>Business_Layer\WorkRequest.cs</FileName>
+      <NewMemberFileName>WorkRequest.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PremierServiceSolutions.Business_Layer.EmployeeType" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAABAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Business_Layer\EmployeeType.cs</FileName>
+      <NewMemberFileName>EmployeeType.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PremierServiceSolutions.Business_Layer.Call" Collapsed="true">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAABAAAAAAACAAAAAACAAAAAgAAAAAAAAAgAAABA=</HashCode>
+      <FileName>Business_Layer\Call.cs</FileName>
+      <NewMemberFileName>Call.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PremierServiceSolutions.Business_Layer.Service" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEQAAAAAAAAAAAACAgAAAiAAAAAAAAAAEAAAAABAA=</HashCode>
+      <FileName>Business_Layer\Service.cs</FileName>
+      <NewMemberFileName>Service.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PremierServiceSolutions.Business_Layer.Job" Collapsed="true">
+    <Position X="9.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAACAAAAIAAAAAgAAIAAAAA=</HashCode>
+      <FileName>Business_Layer\Job.cs</FileName>
+      <NewMemberFileName>Job.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
