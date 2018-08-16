@@ -141,7 +141,7 @@ namespace PremierServiceSolutions.Business_Layer
         #region methods
         public ClientDetail()
         {
-            
+
         }
         public ClientDetail(string clientIdentifier, string clientFollowup, string clientStatus)
         {
@@ -172,7 +172,7 @@ namespace PremierServiceSolutions.Business_Layer
 
         public void CaptureClientManagementInfo()
         {
-            
+
         }
 
         public List<string> FindClient(string clientType, string clientIdentifier)
@@ -180,7 +180,6 @@ namespace PremierServiceSolutions.Business_Layer
             List<string> findClient = data.FindClient(clientType, clientIdentifier);
 
             return findClient;
-            
         }
         public List<string> FindClientWithContract(string clientType,string clientIdentifier)
         {
@@ -191,7 +190,7 @@ namespace PremierServiceSolutions.Business_Layer
 
         public virtual bool UpdateClientDetails()
         {
-            return true;   
+            return true;
         }
         public virtual bool CaptureClientDetails()
         {
@@ -201,7 +200,6 @@ namespace PremierServiceSolutions.Business_Layer
         public void ViewPastCalls()
         {
 
-           
         }
 
         public List<string> ReceiveSatisfactionReport()
@@ -219,7 +217,6 @@ namespace PremierServiceSolutions.Business_Layer
         public eClientStatus GetStatus(string clientIdentifier)
         {
             return data.GetClientStatus(clientIdentifier);
-            
         }
         #endregion
     }

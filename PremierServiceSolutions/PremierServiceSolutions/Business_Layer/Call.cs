@@ -157,13 +157,11 @@ namespace PremierServiceSolutions.Business_Layer
         public void AnswerCall()
         {
             Data_Layer.DataHandler findClient = new Data_Layer.DataHandler();
-           
-            
         }
 
         public void EndCall()
         {
-            
+
         }
 
         public bool InitiateCall()
@@ -171,8 +169,6 @@ namespace PremierServiceSolutions.Business_Layer
             bool check;
             Data_Layer.DataHandler newCall = new Data_Layer.DataHandler();
            return check = newCall.InsertCall(ReceiveTime, EndTime, EmpName, EmpSurname, Reason, ClientType, CustomerName, CustomerSurname, BusinessName);
-            
-            
         }
     }
 }

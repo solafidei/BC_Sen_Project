@@ -82,15 +82,12 @@ namespace PremierServiceSolutions.Business_Layer
 
         public Individual()
         {
-            
+
         }
 
         public override bool CaptureClientDetails()
         {
-            
-            
             return check = data.InsertClient(FirstName, LastName, TelNumber, Address, AdhocNote, LastName, ClientType, ContractType, ClientFollowup, ClientReport, ClientStatus,GenerateClientCode());
-
         }
         public override bool UpdateClientDetails()
         {

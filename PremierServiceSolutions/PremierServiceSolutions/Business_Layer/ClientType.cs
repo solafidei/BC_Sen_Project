@@ -8,17 +8,13 @@ namespace PremierServiceSolutions.Business_Layer
 {
     public interface ClientType
     {
-        
-
          string ClientType
         {
             get;
             set;
-            
         }
         string ContractType
         {
-
             get;
             set;
         }

@@ -74,12 +74,11 @@ namespace PremierServiceSolutions.Business_Layer
         #region methods
         public Business()
         {
-            
+
         }
 
         public override bool CaptureClientDetails()
-        {           
-            
+        {
             return check = data.InsertClient(businessName,businessName , TelNumber, BusinessAddress, AdhocNote, BusinessName, ClientType, ContractType, ClientFollowup, ClientReport, ClientStatus,GenerateClientCode());
         }
 

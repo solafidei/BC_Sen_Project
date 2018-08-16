@@ -81,19 +81,18 @@ namespace PremierServiceSolutions.Business_Layer
 
         public Employee()
         {
-            
+
         }
 
         public bool AddEmployee()
         {
-            
+
            return check = data.InsertEmployee(EmpName, EmpSurname, EmpAddress, EmpTelNum, EmpType, JobDescription);
         }
 
         public bool UpdateEmployee()
         {
             return check = data.UpdateEmployee(EmpName, EmpSurname, EmpAddress, EmpTelNum, EmpType, JobDescription);
-
         }
     }
 }

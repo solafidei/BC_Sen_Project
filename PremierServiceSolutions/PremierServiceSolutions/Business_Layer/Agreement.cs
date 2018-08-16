@@ -15,7 +15,7 @@ namespace PremierServiceSolutions.Business_Layer
         private string equipmentName;
         private string equipmentModel;
         Data_Layer.DataHandler data = new Data_Layer.DataHandler();
-        
+
         bool check;
 
         public int ContractID
@@ -123,14 +123,13 @@ namespace PremierServiceSolutions.Business_Layer
 
         public Agreement()
         {
-            
+
         }
 
         public List<string> ViewAgreement(string firstName, string lastName, string businessName, string clientType)
         {
             List<string> findAgreement = data.FindAgreement(firstName, lastName, businessName, clientType);
             return findAgreement;
-            
         }
         public List<string> ViewAgreementWithIdentifier(string contractIdentifier)
         {
@@ -139,29 +138,24 @@ namespace PremierServiceSolutions.Business_Layer
         }
 
         public bool CaptureAgreementDetails()
-        {                             
-            
+        {
             return check = data.InsertContract(ContractType, ServiceName, ServiceLevel, ServiceAvailability,EquipmentName,EquipmentModel,GenerateContractCode());
         }
 
         public bool ManageContractTypeAvailable()
         {
-            
             return check = data.UpdateContract(ContractType, ServiceAvailability, ServiceName,ContractIdentifier,equipmentName,EquipmentModel);
-            
         }
 
         public void ManageContractTypePerformace()
         {
-            
+
         }
         public List<string> ViewContract()
         {
             List<string> viewContract = data.ViewContract();
 
             return viewContract;
-
         }
-
     }
 }

@@ -42,7 +42,6 @@ namespace PremierServiceSolutions.Business_Layer
         {
             string department;
             return department = data.Login(Username, Password);
-                      
         }
     }
 }

@@ -58,7 +58,6 @@ namespace PremierServiceSolutions.Business_Layer
             this.equipmentType = equipmentType;
             this.equipmentName = equipmentName;
             this.equipmentModel = equipmentModel;
-
         }
 
         public List<Equipment> ViewEquipmentWithType()

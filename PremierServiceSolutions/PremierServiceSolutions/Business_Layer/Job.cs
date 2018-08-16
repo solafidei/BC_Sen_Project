@@ -24,23 +24,22 @@ namespace PremierServiceSolutions.Business_Layer
 
         public Job()
         {
-            
+
         }
 
         public void TrackJob()
         {
-            
+
         }
 
         public void EscalateJob()
         {
-            
+
         }
 
         public void ReassignJob()
         {
-            
-            
+
         }
 
         public void AssignJob()

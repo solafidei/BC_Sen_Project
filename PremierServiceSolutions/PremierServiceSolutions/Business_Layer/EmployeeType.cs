@@ -38,7 +38,7 @@ namespace PremierServiceSolutions.Business_Layer
 
         public EmployeeType()
         {
-            
+
         }
     }
 }
