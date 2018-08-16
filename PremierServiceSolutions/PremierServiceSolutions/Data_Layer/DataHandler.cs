@@ -26,14 +26,11 @@ namespace PremierServiceSolutions.Data_Layer
         Crypto crypto = new Crypto();
         string department;
 
-
-
         public void Connect()
         {
             using (con = new SqlConnection(conString))
             {
                 MessageBox.Show(con.State.ToString());
-
             }
         }
         public void Disconnect()
@@ -53,12 +50,9 @@ namespace PremierServiceSolutions.Data_Layer
             }
             catch (Exception ex)
             {
-
                 throw new Exception(ex.ToString(), ex);
             }
         }
-
-
 
         public bool InsertClient(string firstName, string lastName, int telNumber,
             string address, string adhocNote, string businessName, string clientType,
@@ -88,7 +82,6 @@ namespace PremierServiceSolutions.Data_Layer
                     if (cmd.ExecuteNonQuery() > 0)
                     {
                         check = true;
-
                     }
                     else
                     {
@@ -101,12 +94,9 @@ namespace PremierServiceSolutions.Data_Layer
             }
         }
 
-
         public bool InsertCall(DateTime receiveTime, DateTime endTime, string name, string surname, string reason,
             string clientType, string customerName, string customerSurname, string businessName)
         {
-
-
             using (con = new SqlConnection(conString))
             {
                 using (cmd = new SqlCommand("sp_InsertCall", con))
@@ -126,14 +116,11 @@ namespace PremierServiceSolutions.Data_Layer
                     if (cmd.ExecuteNonQuery() > 0)
                     {
                         check = true;
-
                     }
                     else
                     {
                         return check = false;
                     }
-
-
                   //  MessageBox.Show("inserted call data check");
                 }
             }
@@ -143,7 +130,6 @@ namespace PremierServiceSolutions.Data_Layer
         public bool InsertContract(string contractType, string serviceName, string serviceLevel
             , string serviceAvailable, string equipmentName, string equipmentModel, string contractIdentifier)
         {
-
             using (con = new SqlConnection(conString))
             {
                 using (cmd = new SqlCommand("sp_InsertContract", con))
@@ -168,17 +154,13 @@ namespace PremierServiceSolutions.Data_Layer
                     {
                         check = false;
                     }
-
                 }
             }
             return check;
-
-
         }
 
         public bool InsertEmployeeType(string employeeSkill, string employeeType) //not used yet
         {
-
             using (con = new SqlConnection(conString))
             {
                 using (cmd = new SqlCommand("sp_InsertEmployeeType", con))
@@ -198,12 +180,9 @@ namespace PremierServiceSolutions.Data_Layer
                     {
                         check = false;
                     }
-
                 }
             }
             return check;
-
-
         }
 
         public bool InsertService(string serviceName, string serviceLevel)
@@ -230,8 +209,6 @@ namespace PremierServiceSolutions.Data_Layer
                 }
             }
             return check;
-
-
         }
 
         public bool InsertEmployee(string name, string surname, string address, int telNum, //not used yet
@@ -264,6 +241,7 @@ namespace PremierServiceSolutions.Data_Layer
             }
             return check;
         }
+
         public bool InsertWorkRequest(string workRequirement, string workDuration,
             string name, string surname)
         {
@@ -282,8 +260,6 @@ namespace PremierServiceSolutions.Data_Layer
                     if (cmd.ExecuteNonQuery() > 0)
                     {
                         check = true;
-                       
-
                     }
                     else
                     {
@@ -293,7 +269,6 @@ namespace PremierServiceSolutions.Data_Layer
             }
             return check;
         }
-
 
         public bool UpdateClient(int telNumber, string address, string adhocNote, string clientType,
             string contractType, string followup, string report, string status, string clientIdentifier)
@@ -315,7 +290,6 @@ namespace PremierServiceSolutions.Data_Layer
                     cmd.Parameters.AddWithValue("@report", report);
                     cmd.Parameters.AddWithValue("@status", status);
                     cmd.Parameters.AddWithValue("@clientIdentifier", clientIdentifier);
-                    
 
                     con.Open();
                     int checking = cmd.ExecuteNonQuery();
@@ -333,7 +307,6 @@ namespace PremierServiceSolutions.Data_Layer
             return check;
         }
 
-
         public bool UpdateContract(string contractType, string serviceAvailable, string serviceName,string contractIdentifier, string equipmentName, string equipmentModel)
         {
             using (con = new SqlConnection(conString))
@@ -341,14 +314,13 @@ namespace PremierServiceSolutions.Data_Layer
                 using (cmd = new SqlCommand("sp_UpdateContract", con))
                 {
                     cmd.CommandType = CommandType.StoredProcedure;
-                    
+
                     cmd.Parameters.AddWithValue("@contractType", contractType);
                     cmd.Parameters.AddWithValue("@serviceAvailable", serviceAvailable);
                     cmd.Parameters.AddWithValue("@serviceName", serviceName);
                     cmd.Parameters.AddWithValue("@contractIdentifier", contractIdentifier);
                     cmd.Parameters.AddWithValue("@equipmentName", equipmentName);
                     cmd.Parameters.AddWithValue("@equipmentModel", equipmentModel);
-
 
                     con.Open();
                     if (cmd.ExecuteNonQuery() > 0)
@@ -391,15 +363,10 @@ namespace PremierServiceSolutions.Data_Layer
                     {
                         check = false;
                     }
-
                 }
             }
             return check;
-
-
-
         }
-
 
         public bool UpdateService(string serviceName, string serviceLevel)
         {
@@ -426,7 +393,6 @@ namespace PremierServiceSolutions.Data_Layer
             }
             return check;
         }
-
 
         public bool UpdateWorkRequest(int workID, string workRequirement, string workDuration, //not used yet
             string name, string surname)
@@ -469,8 +435,6 @@ namespace PremierServiceSolutions.Data_Layer
 
                     cmd.Parameters.AddWithValue("@clientIdentifier", clientIdentifier);
                     cmd.Parameters.AddWithValue("@clientType", clientType);
-                    
-
 
                     con.Open();
                     adapter = new SqlDataAdapter(cmd);
@@ -484,11 +448,8 @@ namespace PremierServiceSolutions.Data_Layer
                         {
                             client.Add(field.ToString());
                         }
-
                     }
-
                     return client;
-
                 }
             }
         }
@@ -505,8 +466,6 @@ namespace PremierServiceSolutions.Data_Layer
                     cmd.Parameters.AddWithValue("@clientIdentifier", clientIdentifier);
                     cmd.Parameters.AddWithValue("@clientType", clientType);
 
-
-
                     con.Open();
                     adapter = new SqlDataAdapter(cmd);
                     
@@ -519,11 +478,8 @@ namespace PremierServiceSolutions.Data_Layer
                         {
                             client.Add(field.ToString());
                         }
-
                     }
-
                     return client;
-
                 }
             }
         }
@@ -593,9 +549,7 @@ namespace PremierServiceSolutions.Data_Layer
                     adapter.Fill(ds);
                     foreach (DataRow item in ds.Tables[0].Rows)
                     {
-                        
                         followup.Add(new ClientDetail(item["ClientIdentifier"].ToString(), item["ClientFollowup"].ToString(), item["ClientStatus"].ToString()));
-                       
                     }
                 }
             }
@@ -706,13 +660,12 @@ namespace PremierServiceSolutions.Data_Layer
                                 department = item["department"].ToString();
                                 check = true;
                             }
-                        }                        
+                        }
                     }
                     else
                     {
                         check = false;
-                    }                   
-
+                    }
                 }
             }
             return department;
@@ -729,12 +682,10 @@ namespace PremierServiceSolutions.Data_Layer
                         cmd.CommandType = CommandType.StoredProcedure;
                         adapter.SelectCommand = cmd;
                         adapter.Fill(dt);
-
                     }
                 }
                 return dt;
             }
-            
         }
 
         private DataTable GetEquipment(int parentID)
@@ -749,12 +700,11 @@ namespace PremierServiceSolutions.Data_Layer
                         cmd.Parameters.AddWithValue("@parentID", parentID);
                         adapter.SelectCommand = cmd;
                         adapter.Fill(dt);
-
                     }
                 }
                 PopulateTreeView(dt);
                 return dt;
-            }            
+            }
         }
 
         private void PopulateTreeView(DataTable dtParent)
@@ -784,7 +734,6 @@ namespace PremierServiceSolutions.Data_Layer
                     if (name == null)
                     {
                         model.Add(dr["EquipmentModel"].ToString());
-
                     }
                     else
                     {
@@ -845,7 +794,6 @@ namespace PremierServiceSolutions.Data_Layer
                     }
                     return agreement;
                 }
-
             }
         }
 
@@ -869,7 +817,6 @@ namespace PremierServiceSolutions.Data_Layer
                     return new ClientDetail.eClientStatus();
                 }
             }
-
         }
 
         public DataTable GetReport(string clientType, string clientIdentifier)
@@ -886,7 +833,6 @@ namespace PremierServiceSolutions.Data_Layer
                     adapter.Fill(ds);
 
                     return ds.Tables[0];
-
                 }
             }
         }
@@ -952,14 +898,11 @@ namespace PremierServiceSolutions.Data_Layer
                     adapter.Fill(ds);
                     foreach (DataRow item in ds.Tables[0].Rows)
                     {
-
                         workrequest.Add(new WorkRequest(item["WorkRequirement"].ToString(), item["WorkDuration"].ToString()));
-
                     }
                 }
             }
             return workrequest;
-
         }
     }
 }
